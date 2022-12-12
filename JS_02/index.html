@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">            
+            <div class="calculator">
+              <div class="calculator_display">0</div>
+        
+              <div class="calculator__keys">
+                <button class="operator" onclick="save_operator('+')">+</button>
+                <button class="operator" onclick="save_operator('-')">-</button>
+                <button class="operator" onclick="save_operator('*')">&times;</button>
+                <button class="operator" onclick="save_operator('/')">÷</button>
+                <button onclick="save_number(7)">7</button>
+                <button onclick="save_number(8)">8</button>
+                <button onclick="save_number(9)">9</button>
+                <button onclick="save_number(4)">4</button>
+                <button onclick="save_number(5)">5</button>
+                <button onclick="save_number(6)">6</button>
+                <button onclick="save_number(1)">1</button>
+                <button onclick="save_number(2)">2</button>
+                <button onclick="save_number(3)">3</button>
+                <button onclick="save_number(0)">0</button>
+                <button onclick="set_decimal()">.</button>
+                <button onclick="clear_calc()">C</button>
+                <button class="operator_equal" onclick="equal()">=</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="exesise_1">
+                <button onclick="even_numbers()">2) Bиведіть всі парні значення</button>
+            </div> 
+            <div class="exesise_1">
+                <button onclick="calc_sum()">3) Bиведіть суму чисел між  А і В</button>
+            </div>
+            <div class="exesise_1">
+                <button onclick="loop_numbers()">4) дані від більшого до меншог</button>
+            </div> 
+          </div>  
+          <div class="container">
+            <div class="exesise_1">
+                <button onclick="even_print_star()">5) Bиведіть в консоль фігуру * </button>
+            </div> 
+            <div class="exesise_1">
+                <button onclick="admin_login()">6) логін та пароль для адміністратора </button>
+            </div>
+            <div class="exesise_1">
+                <button onclick="calc_avg()">7) середнє значення 3 чисел</button>
+            </div> 
+          </div>
+          <div class="container">
+            <div class="exesise_1">
+                <button onclick="vik()"> 8) Спитати в користувача вік</button>
+            </div> 
+            <div class="exesise_1">
+                <button onclick="solar_system()">9) Hазви планет сонячної системи</button>
+            </div>
+            <div class="exesise_1">
+                <button onclick="calc_discount()">10) порахувати знижку </button>
+            </div> 
+          </div>  
+    </body>
+</html>
