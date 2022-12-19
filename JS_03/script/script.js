@@ -104,12 +104,38 @@ function getArrayFromStartToFinish(start = "0", finish = "100", arr = []) {
     }
     return [];
 }
+
+function getArrayFromStartToFinish_02(start = "0", finish = "100", arr = []) {
+    if (Array.isArray(arr)) {
+        let first = arr.findIndex(s => s == start);
+        let end = arr.findIndex(f => f == finish);
+        if (first > end) {
+            let temp = end;
+            end = first;
+            first = temp;
+        }
+        if (first == -1 && end == -1) {
+            return arr;
+        } else if (first == -1) {
+            return arr.slice(end, arr.length);            
+        } else if (end == -1) {
+            return arr.slice(first, arr.length);            
+        } else {
+            return arr.slice(first, end+1);
+            
+        }
+
+    }
+    return [];
+}
 console.log(`01 - ${getEvenNumbers(arrRandomNumbers)}`);
-console.log(`02 - ${getItemsFromMarket()}`);
+//console.log(`02 - ${getItemsFromMarket()}`);
 console.log(`03 - ${getAverage(arrRandomNumbers)}`);
 console.log(`04 - ${changeArray()}`);
 console.log(`05 - ${firstLast('last',animals)}`);
 console.log(`05 - ${firstLast('first',animals)}`);
 console.log(`06 - ${getSummArray(arrRandomNumbers)}`);
+animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
+console.log(`07 - ${getArrayFromStartToFinish_02('cow','dog', animals)}`);
 animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
 console.log(`07 - ${getArrayFromStartToFinish('cow','dog', animals)}`);
