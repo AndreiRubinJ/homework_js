@@ -129,7 +129,7 @@ function getArrayFromStartToFinish_02(start = "0", finish = "100", arr = []) {
     return [];
 }
 console.log(`01 - ${getEvenNumbers(arrRandomNumbers)}`);
-//console.log(`02 - ${getItemsFromMarket()}`);
+console.log(`02 - ${getItemsFromMarket()}`);
 console.log(`03 - ${getAverage(arrRandomNumbers)}`);
 console.log(`04 - ${changeArray()}`);
 console.log(`05 - ${firstLast('last',animals)}`);
