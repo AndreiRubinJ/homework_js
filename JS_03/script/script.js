@@ -6,7 +6,7 @@ function getEvenNumbers(arr) {
         for (i = 0; i < arr.length; i++) {
             item = arr[i];
             if (typeof item !== 'string') {
-                if (item % 2 == 0) {
+                if (!(item & 1)) {
                     result.push(item);
                 }
             }
@@ -129,13 +129,15 @@ function getArrayFromStartToFinish_02(start = "0", finish = "100", arr = []) {
     return [];
 }
 console.log(`01 - ${getEvenNumbers(arrRandomNumbers)}`);
-console.log(`02 - ${getItemsFromMarket()}`);
-console.log(`03 - ${getAverage(arrRandomNumbers)}`);
-console.log(`04 - ${changeArray()}`);
-console.log(`05 - ${firstLast('last',animals)}`);
-console.log(`05 - ${firstLast('first',animals)}`);
-console.log(`06 - ${getSummArray(arrRandomNumbers)}`);
-animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
-console.log(`07 - ${getArrayFromStartToFinish_02('cow','dog', animals)}`);
-animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
-console.log(`07 - ${getArrayFromStartToFinish('cow','dog', animals)}`);
+// console.log(`02 - ${getItemsFromMarket()}`);
+// console.log(`03 - ${getAverage(arrRandomNumbers)}`);
+// console.log(`04 - ${changeArray()}`);
+// console.log(`05 - ${firstLast('last',animals)}`);
+// console.log(`05 - ${firstLast('first',animals)}`);
+// console.log(`06 - ${getSummArray(arrRandomNumbers)}`);
+// animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
+// console.log(`07 - ${getArrayFromStartToFinish_02('cow','dog', animals)}`);
+// animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
+// console.log(`07 - ${getArrayFromStartToFinish('cow','dog', animals)}`);
+
+
