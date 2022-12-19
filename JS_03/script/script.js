@@ -139,5 +139,4 @@ animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
 console.log(`07 - ${getArrayFromStartToFinish_02('cow','dog', animals)}`);
 animals =['cat', 'cow', 'fish', 'chicken', 'dog', 'pig'];
 console.log(`07 - ${getArrayFromStartToFinish('cow','dog', animals)}`);
-gicd 
 
