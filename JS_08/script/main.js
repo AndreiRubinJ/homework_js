@@ -56,15 +56,15 @@ let images = [
     }    
 ]
 
-window.onload = () => {    
+window.onload = () => {
+
     const form_fileds = 'form [class *=col]';
     document.querySelector('form .btn-primary').onclick = function () {
         getDataForm(form_fileds, updateListInfo);
         return false;
 
     };
-
-    let body = document.querySelector('body');
+    let body = document.querySelector('body');    
     let table = new HomeWorkTable(table_data).createTable();
     let images_elements = new HomeWorkImage(images).createImageElement();
     body.appendChild(images_elements);
@@ -207,11 +207,15 @@ class HomeWorkTable {
 
     createTable(){
         let div = document.createElement('div');
-        div.classList.add("table-responsive-sm");
+        // div.classList.add("table-responsive-sm");
+        div.classList.add("text-center");
+        div.classList.add('row');
+        div.classList.add('justify-content-center');
         let main_table = document.createElement('table');
         main_table.classList.add("table");  
         main_table.classList.add("table-striped");
         main_table.classList.add("mt-5");
+        main_table.classList.add("w-75");
         main_table.appendChild(this.createTableHeader());
         main_table.appendChild(this.createBody());
         div.appendChild(main_table);
@@ -221,6 +225,7 @@ class HomeWorkTable {
 
     createTableHeader() {               
         let thead = document.createElement('thead');
+        thead.classList.add("table-primary");
         let tr = this.createHeaderRow();
         thead.appendChild(tr);        
         return thead;
