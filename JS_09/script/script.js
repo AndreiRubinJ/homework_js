@@ -1,3 +1,4 @@
+let slider;
 let images = [
     {
         'imgPath':'img/image1.jpg',
@@ -64,12 +65,11 @@ window.onload = () => {
       }
 
       new HomeWorkSlider(images).createImageElement();
-      let slider = startSlaider(2000);
+      slider = startSlaider(2000);
 
       let next = document.querySelector('.next');
       let prew = document.querySelector('.prew');
-      let next_count = 0;
-      let prew_count = 5;
+      let next_count = 0;     
       next.onclick = function () {      
         clearInterval(slider);        
         const imgWraper = document.querySelector('.img-wrapper');            
