@@ -112,8 +112,9 @@ function printNumbers(from, to, element) {
         info.innerHTML = ` ${from--}`;        
       if (from < to ) {
         clearInterval(timerId);
+        info.innerHTML = 'Ви дочикались знижок !!!';        
         element.style.display = "none";
-        info.innerHTML = 'Ви дочикались знижок!!!';
+        
       }
     }, 1000);
     return timerId;
