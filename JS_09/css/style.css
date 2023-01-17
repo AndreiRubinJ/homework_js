@@ -39,7 +39,7 @@ img {
 .prew, .next {
     cursor:pointer; 
     position:absolute;
-    top:41%;
+    top:32%;
     width: auto;
     margin-top: 22px;
     padding:16px;
