@@ -70,6 +70,7 @@ window.onload = () => {
       let next = document.querySelector('.next');
       let prew = document.querySelector('.prew');
       let next_count = 0;     
+
       next.onclick = function () {      
         clearInterval(scroll);        
         const imgWraper = document.querySelector('.img-wrapper');            
@@ -112,7 +113,7 @@ function printNumbers(from, to, element) {
       if (from < to ) {
         clearInterval(timerId);
         element.style.display = "none";
-        info.innerHTML = '';
+        info.innerHTML = 'Ви дочикались знижок!!!';
       }
     }, 1000);
     return timerId;
@@ -215,8 +216,7 @@ function startSlaider(dalay = 3000) {
        let widthEl = document.querySelector('.img-wrapper > :first-child').offsetWidth + 24;         
        imgWraper.style.left = `-${widthEl * count}px`;
        imgWraper.style.transition ='.3s';
-    }, dalay);   
-     console.log(scroll);
+    }, dalay);        
      return scroll;
   }
   
