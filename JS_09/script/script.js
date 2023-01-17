@@ -1,4 +1,4 @@
-let slider;
+let scroll;
 let images = [
     {
         'imgPath':'img/image1.jpg',
@@ -65,13 +65,13 @@ window.onload = () => {
       }
 
       new HomeWorkSlider(images).createImageElement();
-      slider = startSlaider(2000);
+      startSlaider(2000);
 
       let next = document.querySelector('.next');
       let prew = document.querySelector('.prew');
       let next_count = 0;     
       next.onclick = function () {      
-        clearInterval(slider);        
+        clearInterval(scroll);        
         const imgWraper = document.querySelector('.img-wrapper');            
         const imgItems = document.querySelectorAll('.img-wrapper > *');
         if(next_count == imgItems.length - 3){
@@ -84,7 +84,7 @@ window.onload = () => {
         imgWraper.style.transition ='all ease .3s;';       
     };      
     prew.onclick = function () {      
-        clearInterval(slider);        
+        clearInterval(scroll);        
         const imgWraper = document.querySelector('.img-wrapper');                    
         const imgItems = document.querySelectorAll('.img-wrapper > *');
         if(next_count < 0){
@@ -203,21 +203,20 @@ function startSlaider(dalay = 3000) {
       imgWraper.insertAdjacentHTML('beforeend', imgItems[i].outerHTML)
     }
     let count = 0;      
-    let scroll = setInterval(scrolling,dalay);    
-
-     function scrolling(){
+    scroll = setInterval(() => {     
        count++;  
        if(count == length){
           clearInterval(scroll);
           count = 1;            
           imgWraper.style.left ='0';
           imgWraper.style.transition ='0s';
-          scroll = setInterval(scrolling,dalay);
+          scroll = startSlaider(dalay);
        }
        let widthEl = document.querySelector('.img-wrapper > :first-child').offsetWidth + 24;         
        imgWraper.style.left = `-${widthEl * count}px`;
        imgWraper.style.transition ='.3s';
-     }
+    }, dalay);   
+     console.log(scroll);
      return scroll;
   }
   
