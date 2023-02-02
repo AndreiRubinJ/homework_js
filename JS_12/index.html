@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./src/convas.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="d-flex justify-content-start" style="max-height: 100rem;"> 
+    <section>
+    <form class="mt-5 ms-5 card p-3" id="formid" style="max-width: 18rem;">
+        <div class="mb-3">          
+          <input class="form-control-sm width" placeholder="width">          
+        </div>
+        <div class="mb-3">          
+          <input class="form-control-sm height" placeholder="height">
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">ellipse</label>
+        </div>
+        <button class="btn btn-primary submit-drow" disabled>Submit</button>
+      </form>
+      <div class="input-group input-group-sm mb-3 ms-5 mt-5" style="width: 190px">        
+        <input type="text" class="form-control" aria-label="input cycle size " aria-describedby="inputGroup-sizing-sm">
+        <button type="button" class="btn btn-outline-info drow_circle">Drow circle</button>
+      </div>       
+      <div class="input-group input-group-sm mb-3 mt-5 ms-5" style="width: 300px">        
+        <input type="text" class="form-control canvas-text" aria-label="input text" aria-describedby="inputGroup-sizing-sm">
+        <button type="button" class="btn btn-outline-info drow_canvas">Drow circle with canvas</button>
+      </div>  
+    </section>      
+    </section>  
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>       
+</body>
+</html>
