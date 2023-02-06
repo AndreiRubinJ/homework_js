@@ -116,8 +116,14 @@ window.onload = () => {
       } ) 
 
     document.querySelector('.drow_circle').addEventListener('click', (e) =>{   
-    let r = document.querySelector(".form-control").value             
-    document.querySelector('body section').appendChild(drowCircle(r));
+    let r = document.querySelector(".form-control").value
+    let regExp = /^\d{1,3}$/gm;
+    if(regExp.test(r)){             
+        document.querySelector('body section').appendChild(drowCircle(r));
+    }else{
+        document.querySelector(".form-control").placeholder = "not valid ... ";
+        document.querySelector(".form-control").value ="";
+    }
   });
     document.querySelector('.drow_canvas').addEventListener('click', (e) =>{
         let text = document.querySelector(".canvas-text").value
