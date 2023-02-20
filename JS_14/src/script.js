@@ -161,6 +161,6 @@ function creatInformationElements(text) {
 }
 function createImage(text) {
   let img = document.createElement("img");
-  img.src = `./src/img/${text}.jpg`;
+  img.src = `./src/img/${text}.jpg`.toLowerCase();
   return img;
 }

@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-util":"^3.0.8",
     "gulp-promise": "^1.0.2",
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^3.3.0"
   }
 }
