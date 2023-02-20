@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/spinner.css">
+  <script src="./src/script.js"></script>
+  <title>Document</title>
+</head>
+
+<body class="bg-light" style="height:90vh;">  
+  <span class="row g-0 mb-5 mt-5 justify-content-between" tabindex="0">
+    <button class="col-md-1 btn btn-secondary previous" >Previous</button>
+    <button class="col-md-1 btn btn-secondary diameter" disabled>Diameter</button>
+    <button class="col-md-1 btn btn-secondary population" disabled >Population</button>
+    <button class="col-md-1 btn btn-secondary next" >Next</button>
+    
+  </span>  
+  <main class="container" style="overflow-y: scroll; height:70vh;">   
+  </main>
+  <div id="spinner-div" class="pt-5">
+    <div class="spinner-border text-primary" role="status">
+    </div>
+  </div>
+</body>
+</html>
