@@ -10,7 +10,7 @@
 }
 body {
   /* The image used */
-  background-image: url("/src/img/starwars.jpg");
+  background-image: url("./img/starwars.jpg");
 
   /* Full height */
   height: 100%;
