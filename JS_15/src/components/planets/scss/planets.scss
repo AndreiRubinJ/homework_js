@@ -1,0 +1,21 @@
+.container::-webkit-scrollbar {
+    display: none;
+  }  
+  .container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    opacity: 0.5;
+  }
+
+  body {
+    /* The image used */
+    background-image: url("../img/planets/img/starwars.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
